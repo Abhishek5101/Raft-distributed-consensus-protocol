@@ -1,5 +1,4 @@
 .idea/
 __pycache__/
 
-*_log.txt
 *server_registry.txt
