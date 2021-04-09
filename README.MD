@@ -12,7 +12,7 @@ without halting up the cluster.
 
 ```
 python3 start_server.py abhi 10000
-python3 start_server.py dec 100001
+python3 start_server.py dec 10001
 python3 start_server.py shane 10002
 ```
 
