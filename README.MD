@@ -43,3 +43,8 @@ To show all data
 
 \
 ![demo](assets/raft_3_nodes_demo.gif)
+
+- A brief explanation:
+In the demo above, we start a cluster of three servers named Abhi, Dec and Shane. After randomized timeouts, the server Shane becomes the leader of the cluster and then we connect our client to that server. Our client then issues the command `client|@get evervault` where `evervault` is the key and the client requests the value for that key from the server. Note that `client|@` is required precursor to every command the client issues and we parse it in code. The request `client|@get evervault` gets a response `b'shane|10002@encryption'` back where `10002` is the port of the leader server and `encryption` is the value result of `evervault` key.
+- Similarly, you can give other read or write commands like `set key`, `get key`,`delete key`, `show`. 
+- Sometimes the write commands may close the socket connection and you would have to fire up the client again. I am working on fixing that soon.  
