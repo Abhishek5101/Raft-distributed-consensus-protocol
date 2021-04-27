@@ -1,10 +1,10 @@
-# evervault-challenge
+# Raft-distributed-consensus-protocol
 
 ### Installation and Running
 
 clone the repository locally 
 
-```git clone https://github.com/Abhishek5101/evervault-challenge.git```
+```git clone https://github.com/Abhishek5101/Raft-distributed-consensus-protocol.git```
 
 - The setup is pre-populated with a cluster of 3 nodes. To boot-up that cluster, open 3 terminal windows for each server and another one for a client. 
  - To start each of the servers - run the start_server script with the respective names and ports of the pre-populated servers. You can register or deregister more servers 
